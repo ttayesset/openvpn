@@ -6,8 +6,8 @@ if [ "$EUID" -ne 0 ]; then
   exit 1
 fi
 sudo apt install dos2unix -y
-chmod +x create_user.sh traffic_forwarding.sh uninstall_openvpn.sh
-dos2unix openvpn_control.sh create_user.sh traffic_forwarding.sh uninstall_openvpn.sh
+chmod +x install_openvpn.sh create_user.sh traffic_forwarding.sh uninstall_openvpn.sh
+dos2unix openvpn_control.sh install_openvpn.sh create_user.sh traffic_forwarding.sh uninstall_openvpn.sh
 # 主菜单函数
 main_menu() {
   echo "OpenVPN 管理脚本"
